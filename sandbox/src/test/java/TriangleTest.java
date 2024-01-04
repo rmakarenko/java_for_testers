@@ -36,4 +36,11 @@ public class TriangleTest {
             System.out.println("Impossible triangle, sum of 2 sides is less than the third side");
         }
     }
+
+    @Test
+    void equalityTest () throws MyException {
+        var t1 = new Triangle(1.0, 3.0, 3.0);
+        var t2 = new Triangle(3.0, 3.0, 1.0);
+        Assertions.assertEquals(t1, t2);
+    }
 }
