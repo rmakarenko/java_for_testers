@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e91ab07a-f715-4d9d-a0aa-2ad82fac2ffe" name="Changes" comment="Task 5 web autotest">
+    <list default="true" id="e91ab07a-f715-4d9d-a0aa-2ad82fac2ffe" name="Changes" comment="Task 5 web autotest Changes due to Alexei`s comments">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/ApplicationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/GroupHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/LoginHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/model/groupData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/AddDeleteGroupTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/AdddeletegroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/AddDeleteGroupTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/AddDeleteGroupTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +55,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -67,6 +76,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.AddDeleteGroupTest.addNewGroup (1).executor": "Run",
     "Gradle.AddDeleteGroupTest.addNewGroup.executor": "Run",
     "Gradle.AddDeleteGroupTest.deleteGroup.executor": "Run",
     "Gradle.AdddeletegroupTest.adddeletegroup.executor": "Run",
@@ -86,6 +96,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "zulu-17",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/roman/OneDrive/Desktop/java_autotests/addressbook_web_tests/src/test/java/tests",
     "last_opened_file_path": "C:/Users/roman/OneDrive/Desktop/java_autotests/addressbook_web_tests",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -104,8 +115,36 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\roman\OneDrive\Desktop\java_autotests\addressbook_web_tests" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="tests" />
+      <recent name="manager" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.AddDeleteGroupTest.deleteGroup">
+  <component name="RunManager" selected="Gradle.AddDeleteGroupTest.addNewGroup (1)">
+    <configuration name="AddDeleteGroupTest.addNewGroup (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.AddDeleteGroupTest.addNewGroup&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="AddDeleteGroupTest.addNewGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -202,35 +241,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'addressbook_web_tests.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AddDeleteGroupTest.deleteGroup" />
+        <item itemvalue="Gradle.AddDeleteGroupTest.addNewGroup (1)" />
         <item itemvalue="Gradle.AddDeleteGroupTest.addNewGroup" />
+        <item itemvalue="Gradle.AddDeleteGroupTest.deleteGroup" />
         <item itemvalue="Gradle.AdddeletegroupTest.adddeletegroup" />
         <item itemvalue="Gradle.AdddeletegroupTest" />
-        <item itemvalue="Gradle.Tests in 'addressbook_web_tests.test'" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +268,10 @@
       <updated>1702830212516</updated>
       <workItem from="1702830213601" duration="470000" />
       <workItem from="1702832030626" duration="21000" />
-      <workItem from="1703543077960" duration="27323000" />
+      <workItem from="1703543077960" duration="33040000" />
+      <workItem from="1705609726900" duration="18000" />
+      <workItem from="1705609764479" duration="292000" />
+      <workItem from="1705610078033" duration="8639000" />
     </task>
     <task id="LOCAL-00001" summary="Task 3 ()">
       <option name="closed" value="true" />
@@ -277,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704480149232</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Task 5 web autotest Changes due to Alexei`s comments">
+      <option name="closed" value="true" />
+      <created>1705014093131</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705014093131</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +315,8 @@
     <MESSAGE value="Task 3 ()" />
     <MESSAGE value="Task 4" />
     <MESSAGE value="Task 5 web autotest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 5 web autotest" />
+    <MESSAGE value="Task 5 web autotest Changes due to Alexei`s comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 5 web autotest Changes due to Alexei`s comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
