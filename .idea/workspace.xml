@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e91ab07a-f715-4d9d-a0aa-2ad82fac2ffe" name="Changes" comment="Task 5 web autotest Changes due to Alexei`s comments">
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/ApplicationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/GroupHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/LoginHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/model/groupData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/AddDeleteGroupTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/ContactHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/AddContactTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/DeleteContactTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/AddDeleteGroupTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/LoginHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/LoginHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +72,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.AddContactTest.addNewContact.executor": "Run",
     "Gradle.AddDeleteGroupTest.addNewGroup (1).executor": "Run",
     "Gradle.AddDeleteGroupTest.addNewGroup.executor": "Run",
     "Gradle.AddDeleteGroupTest.deleteGroup.executor": "Run",
@@ -120,7 +117,31 @@
       <recent name="manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AddDeleteGroupTest.addNewGroup (1)">
+  <component name="RunManager" selected="Gradle.DeleteContactTest.deleteContact">
+    <configuration name="AddContactTest.addNewContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.AddContactTest.addNewContact&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="AddDeleteGroupTest.addNewGroup (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -193,7 +214,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AdddeletegroupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DeleteContactTest.deleteContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -206,31 +227,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;AdddeletegroupTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="AdddeletegroupTest.adddeletegroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;AdddeletegroupTest.adddeletegroup&quot;" />
+            <option value="&quot;tests.DeleteContactTest.deleteContact&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -243,11 +240,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.DeleteContactTest.deleteContact" />
+        <item itemvalue="Gradle.AddContactTest.addNewContact" />
         <item itemvalue="Gradle.AddDeleteGroupTest.addNewGroup (1)" />
         <item itemvalue="Gradle.AddDeleteGroupTest.addNewGroup" />
         <item itemvalue="Gradle.AddDeleteGroupTest.deleteGroup" />
-        <item itemvalue="Gradle.AdddeletegroupTest.adddeletegroup" />
-        <item itemvalue="Gradle.AdddeletegroupTest" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +268,7 @@
       <workItem from="1703543077960" duration="33040000" />
       <workItem from="1705609726900" duration="18000" />
       <workItem from="1705609764479" duration="292000" />
-      <workItem from="1705610078033" duration="8639000" />
+      <workItem from="1705610078033" duration="14672000" />
     </task>
     <task id="LOCAL-00001" summary="Task 3 ()">
       <option name="closed" value="true" />
@@ -305,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705014093131</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Task 5 web autotest Changes due to Alexei`s comments">
+      <option name="closed" value="true" />
+      <created>1705621265477</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705621265477</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
