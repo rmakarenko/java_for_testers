@@ -1,5 +1,6 @@
 package tests;
 
+import manager.LoginHelper;
 import model.groupData;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -16,25 +17,17 @@ public class AddDeleteGroupTest extends TestBase {
   public void addNewGroup() throws InterruptedException {
     driver.get("http://localhost/addressbook/addressbook/group.php");
     driver.manage().window().setSize(new Dimension(1296, 688));
-    loginSecond(this);
+    LoginHelper.login();
     app.createGroup(new groupData("hello", "general", "kenobi"), AddDeleteGroupTest.this);
     driver.findElement(By.linkText("Logout")).click();
 
-  }
-
-  private static void loginSecond(AddDeleteGroupTest addDeleteGroupTest) {
-    addDeleteGroupTest.driver.findElement(By.name("user")).sendKeys("admin");
-    addDeleteGroupTest.driver.findElement(By.name("pass")).sendKeys("secret");
-    addDeleteGroupTest.driver.findElement(By.xpath("/html/body/div/div[4]/form/input[3]")).click();
-    System.out.println("Login successful");
   }
 
   @Test
   public void deleteGroup() throws InterruptedException {
     driver.get("http://localhost/addressbook/addressbook/group.php");
     driver.manage().window().setSize(new Dimension(1296, 688));
-    loginSecond(this);
-
+    LoginHelper.login();
     //check if there is no group - create it
 
     if (!app.isElementPresent(By.name("Selected[]"), AddDeleteGroupTest.this)) {
