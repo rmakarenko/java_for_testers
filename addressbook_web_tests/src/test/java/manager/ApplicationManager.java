@@ -4,6 +4,7 @@ import model.groupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import tests.AddDeleteGroupTest;
@@ -36,15 +37,30 @@ public class ApplicationManager {
       System.out.println("Group created successful");
     }
 
-    public void init(FirefoxOptions options, TestBase testBase) {
+    public void init(String browser) {
+
+    // public void init(FirefoxOptions options, TestBase testBase, String browser)
 
         if (driver == null) {
 
-            driver = new FirefoxDriver(options);
+            if ("firefox".equals(browser)) {
 
-            testBase.js = (JavascriptExecutor) driver;
+                driver = new FirefoxDriver();
 
-            testBase.vars = new HashMap<String, Object>();
+            } else if ("chrome".equals(browser)) {
+
+                driver = new ChromeDriver();
+
+            } else {
+
+                throw new IllegalArgumentException(String.format("unknown browser %s", browser));
+            }
+
+
+
+            //testBase.js = (JavascriptExecutor) driver;
+
+            //testBase.vars = new HashMap<String, Object>();
 
             Runtime.getRuntime().addShutdownHook(new Thread(driver::quit));
         }

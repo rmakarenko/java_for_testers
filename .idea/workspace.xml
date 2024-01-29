@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e91ab07a-f715-4d9d-a0aa-2ad82fac2ffe" name="Changes" comment="Task 5 web autotest Changes due to Alexei`s comments">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/ContactHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/AddContactTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/DeleteContactTest.java" afterDir="false" />
+    <list default="true" id="e91ab07a-f715-4d9d-a0aa-2ad82fac2ffe" name="Changes" comment="Task 7 login method moved to LoginHelper due to Alexei`s comment">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/LoginHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/LoginHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +32,9 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$/sandbox">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/addressbook_web_tests">
           <activation />
         </task>
         <projects_view>
@@ -75,9 +78,11 @@
     "Gradle.AddContactTest.addNewContact.executor": "Run",
     "Gradle.AddDeleteGroupTest.addNewGroup (1).executor": "Run",
     "Gradle.AddDeleteGroupTest.addNewGroup.executor": "Run",
+    "Gradle.AddDeleteGroupTest.deleteGroup (1).executor": "Run",
     "Gradle.AddDeleteGroupTest.deleteGroup.executor": "Run",
     "Gradle.AdddeletegroupTest.adddeletegroup.executor": "Run",
     "Gradle.AdddeletegroupTest.executor": "Run",
+    "Gradle.DeleteContactTest.deleteContact.executor": "Run",
     "Gradle.Tests in 'addressbook_web_tests.test'.executor": "Run",
     "Gradle.TriangleTest.equalityTest.executor": "Run",
     "Gradle.TriangleTest.executor": "Run",
@@ -94,7 +99,7 @@
     "jdk.selected.JAVA_MODULE": "zulu-17",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/roman/OneDrive/Desktop/java_autotests/addressbook_web_tests/src/test/java/tests",
-    "last_opened_file_path": "C:/Users/roman/OneDrive/Desktop/java_autotests/addressbook_web_tests",
+    "last_opened_file_path": "C:/Users/roman/OneDrive/Desktop/java_autotests/addressbook_web_tests/src/test/java/tests",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -117,31 +122,7 @@
       <recent name="manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DeleteContactTest.deleteContact">
-    <configuration name="AddContactTest.addNewContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.AddContactTest.addNewContact&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.Unnamed">
     <configuration name="AddDeleteGroupTest.addNewGroup (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -190,7 +171,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AddDeleteGroupTest.deleteGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddDeleteGroupTest.deleteGroup (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook_web_tests" />
@@ -203,7 +184,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;AddDeleteGroupTest.deleteGroup&quot;" />
+            <option value="&quot;tests.AddDeleteGroupTest.deleteGroup&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -238,13 +219,32 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="addressbook_web_tests.test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="zulu-17" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <option name="VM_PARAMETERS" value="-ea -Dbrowser=chrome" />
+      <dir value="$PROJECT_DIR$/addressbook_web_tests/src/test/java/tests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.AddDeleteGroupTest.addNewGroup" />
+      <item itemvalue="Gradle.AddDeleteGroupTest.addNewGroup (1)" />
+      <item itemvalue="Gradle.AddDeleteGroupTest.deleteGroup (1)" />
+      <item itemvalue="Gradle.DeleteContactTest.deleteContact" />
+      <item itemvalue="JUnit.Unnamed" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.DeleteContactTest.deleteContact" />
-        <item itemvalue="Gradle.AddContactTest.addNewContact" />
         <item itemvalue="Gradle.AddDeleteGroupTest.addNewGroup (1)" />
+        <item itemvalue="Gradle.AddDeleteGroupTest.deleteGroup (1)" />
+        <item itemvalue="Gradle.DeleteContactTest.deleteContact" />
         <item itemvalue="Gradle.AddDeleteGroupTest.addNewGroup" />
-        <item itemvalue="Gradle.AddDeleteGroupTest.deleteGroup" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +268,7 @@
       <workItem from="1703543077960" duration="33040000" />
       <workItem from="1705609726900" duration="18000" />
       <workItem from="1705609764479" duration="292000" />
-      <workItem from="1705610078033" duration="14672000" />
+      <workItem from="1705610078033" duration="19999000" />
     </task>
     <task id="LOCAL-00001" summary="Task 3 ()">
       <option name="closed" value="true" />
@@ -310,7 +310,31 @@
       <option name="project" value="LOCAL" />
       <updated>1705621265477</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Task 7 add and delete contacts tests">
+      <option name="closed" value="true" />
+      <created>1705966248560</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705966248560</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Task 7 login method moved to LoginHelper due to Alexei`s comment">
+      <option name="closed" value="true" />
+      <created>1706480331562</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706480331562</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Task 7 login method moved to LoginHelper due to Alexei`s comment">
+      <option name="closed" value="true" />
+      <created>1706482846252</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706482846252</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +345,9 @@
     <MESSAGE value="Task 4" />
     <MESSAGE value="Task 5 web autotest" />
     <MESSAGE value="Task 5 web autotest Changes due to Alexei`s comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 5 web autotest Changes due to Alexei`s comments" />
+    <MESSAGE value="Task 7 add and delete contacts tests" />
+    <MESSAGE value="Task 7 login method moved to LoginHelper due to Alexei`s comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 7 login method moved to LoginHelper due to Alexei`s comment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

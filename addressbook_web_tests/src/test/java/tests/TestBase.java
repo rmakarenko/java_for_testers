@@ -42,12 +42,16 @@ public class TestBase {
 
             app = new ApplicationManager();
 
+            app.init(System.getProperty("browser", "firefox"));
+
         }
 
-      var options = new FirefoxOptions();
-      options.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
-      System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\geckodriver.exe");
-        app.init(options, this);
+
+
+    //  var options = new FirefoxOptions();
+      //options.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
+      //System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\geckodriver.exe");
+       // app.init(options, this, "firefox");
     }
 
     @AfterEach
