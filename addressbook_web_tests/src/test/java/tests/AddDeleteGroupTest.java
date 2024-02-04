@@ -1,5 +1,6 @@
 package tests;
 
+import manager.GroupHelper;
 import manager.LoginHelper;
 import model.groupData;
 import org.junit.jupiter.api.Test;
@@ -18,7 +19,7 @@ public class AddDeleteGroupTest extends TestBase {
     driver.get("http://localhost/addressbook/addressbook/group.php");
     driver.manage().window().setSize(new Dimension(1296, 688));
     LoginHelper.login();
-    app.createGroup(new groupData("hello", "general", "kenobi"), AddDeleteGroupTest.this);
+    GroupHelper.createGroup(new groupData("hello", "general", "kenobi"), AddDeleteGroupTest.this);
     driver.findElement(By.linkText("Logout")).click();
 
   }
@@ -31,7 +32,7 @@ public class AddDeleteGroupTest extends TestBase {
     //check if there is no group - create it
 
     if (!app.isElementPresent(By.name("Selected[]"), AddDeleteGroupTest.this)) {
-      app.createGroup(new groupData("nu", "pri", "vet"), AddDeleteGroupTest.this);
+      GroupHelper.createGroup(new groupData("nu", "pri", "vet"), AddDeleteGroupTest.this);
     }
 
     openGroupsPage();
