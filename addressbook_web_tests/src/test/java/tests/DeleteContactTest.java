@@ -4,6 +4,9 @@ import manager.LoginHelper;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
+import static manager.ContactHelper.clickContactCheckbox;
+import static manager.ContactHelper.clickDeleteContactButton;
+
 public class DeleteContactTest extends TestBase {
 
     @Test
@@ -18,12 +21,6 @@ public class DeleteContactTest extends TestBase {
         }
     }
 
-    private static void clickDeleteContactButton() {
-        driver.findElement(By.xpath("/html/body/div/div[4]/form[2]/div[2]/input")).click();
-    }
 
-    private static void clickContactCheckbox() {
-        driver.findElement(By.xpath("//*[@id=\"2\"] ")).click();
-    }
 
 }
